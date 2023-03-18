@@ -53,13 +53,13 @@ function Movie(props) {
     return (
         <div key={props.item.id}>
          
-            <Row xs={1} md={4} className="g-4">
+           
                 <Col>
-                    <Card style={{ width: '18rem' }}>
+                    <Card style={{ width: '18rem' , color:'#E8D5C4', fontFamily:'cursive'}}>
                     <Card.Img variant="top" src={'https://image.tmdb.org/t/p/w500'+props.item.poster_path}/>
                         <Card.Body>
                             <Card.Title>
-                                <h2>{props.item.title} </h2>
+                                <h2 style={{color:'#3A98B9'}}>{props.item.title} </h2>
                                 <h4>{props.item.id} </h4> </Card.Title>
                             <Card.Text>
                                 <p>{props.item.release_date}</p>
@@ -71,7 +71,7 @@ function Movie(props) {
                         </Card.Body>
                     </Card>
                 </Col>
-            </Row>
+           
             <ModalMovie showFlag={showFlag} handleclose={handleclose} movieData={clickedMovie}/>
         </div>
     );

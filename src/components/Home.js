@@ -17,7 +17,7 @@ function Home() {
     }, [])
     return (
         <>
-            <h1>Movies Home</h1>
+            <h1 style={{fontFamily:"cursive"}}>Movies Home</h1>
             {/* <button onClick={sendReq}>send req</button> */}
             <MovieList moviesArr ={moviesArr}/>
       
