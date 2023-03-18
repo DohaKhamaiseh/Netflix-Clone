@@ -50,13 +50,13 @@ return (
           {favArr.map((item) => {
               // console.log(item) ;
              return <Col>
-                <Card style= {{ width: '18rem'}} >
+                <Card style= { { width: '18rem', fontFamily :"cursive"} }>
                 <Card.Img variant="top" src={'https://image.tmdb.org/t/p/w500'+item.poster_path}/>
                     <Card.Body>
-                        <Card.Title>
+                    <Card.Title  style= { {  color :'#3A98B9'} }>
                             <h2>{item.title} </h2>
                             <h4>{item.id} </h4> </Card.Title>
-                        <Card.Text>
+                            <Card.Text style= { {  color :'#E8D5C4'}}>
                             <p>{item.release_date}</p>
                             <p>{item.overview}</p>
                             <p>{item.comment}</p>
